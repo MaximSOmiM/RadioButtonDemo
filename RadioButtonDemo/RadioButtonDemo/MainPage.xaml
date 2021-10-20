@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ x:Class="RadioButtonDemo.MainPage"
+ BackgroundColor="Snow">
+    <StackLayout Margin="10">
+        <Label BindingContext="Работа с RadioButton"
+ TextColor="Navy"
+ FontSize="50"
+ FontAttributes="Bold"
+ HorizontalOptions="Center" />
+        <Label BindingContext="Какой рок вам нравиться?"
+ FontAttributes="Bold"
+ FontSize="20" TextColor="RoyalBlue"/>
+        <RadioButton BindingContext="Тяжелый рок"
+ FontSize="16" FontAttributes="Bold"
+ GroupName="rock"
+ CheckedChanged="OnColorChanged" />
+        <RadioButton BindingContext="Инди-рок"
+ FontSize="16" FontAttributes="Bold"
+ GroupName="rock"
+ CheckedChanged="OnColorChanged" />
+        <RadioButton BindingContext="Дргуое..."
+ FontSize="16" FontAttributes="Bold"
+ GroupName="rock"
+ CheckedChanged="OnColorChanged" />
+        <Label x:Name="colorLabel"
+ FontSize="20" FontAttributes="Bold"
+ TextColor="DarkMagenta"
+ Text="Ваш любимый вид рока: " />
+        <Label BindingContext="Какой ваша любимая ягода?"
+ FontAttributes="Bold"
+ FontSize="20" TextColor="DarkViolet"/>
+        <RadioButton BindingContext="Малина"
+ FontSize="16" FontAttributes="Bold"
+ GroupName="berry"
+ CheckedChanged="OnVegChanged" />
+        <RadioButton BindingContext="Клубника"
+ FontSize="16" FontAttributes="Bold"
+ GroupName="berry"
+ CheckedChanged="OnVegChanged" />
+        <RadioButton BindingContext="Черника"
+ FontSize="16" FontAttributes="Bold"
+ GroupName="berry"
+ CheckedChanged="OnVegChanged" />
+        <RadioButton BindingContext="Голубика"
+ FontSize="16" FontAttributes="Bold"
+ GroupName="berry"
+ CheckedChanged="OnVegChanged" />
+        <RadioButton BindingContext="Другая..."
+ FontSize="16" FontAttributes="Bold"
+ GroupName="berry"
+ CheckedChanged="OnVegChanged" />
+        <Label x:Name="vegLabel"
+ FontAttributes="Bold"
+ FontSize="20" TextColor="DarkViolet"
+ Text="Ваша любимая ягода: " />
+    </StackLayout>
+</ContentPage>
